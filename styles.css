@@ -99,6 +99,12 @@ nav {
     border: none;
 }
 
+.button__nav {
+    border: none;
+    background-color: #6415ff;
+    color: #fff;
+}
+
 button {
     cursor: pointer;
 }
