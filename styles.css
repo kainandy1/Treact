@@ -22,11 +22,6 @@ body {
     overflow-x: hidden;we
 }
 
-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
-}
-
 .row {
     width: 100%;
     max-width: 1280px;
@@ -89,24 +84,12 @@ nav {
     width: 40px;
 }
 
-.btn__menu {
-    display: none;
-    background: transparent;
-    border-width: initial;
-    border-style: none;
-    border-color: initial;
-    border-image: initial;
-    border: none;
-}
-
-.button__nav {
-    border: none;
-    background-color: #6415ff;
-    color: #fff;
-}
-
-button {
-    cursor: pointer;
+.nav__logo--title {
+    font-weight: 900;
+    font-size: 24px;
+    margin-left: 12px;
+    padding-bottom: 2px;
+    letter-spacing: 0.6px;
 }
 
 .nav__links {
@@ -147,3 +130,19 @@ LANDING
 
 */
 
+#landing {
+    padding: 0 32px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 378px;
+    background-color: rgb(255, 255, 255);
+    z-index: 4;
+    visibility: hidden;
+    opacity: 0;
+    
+}
