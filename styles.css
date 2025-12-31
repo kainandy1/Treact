@@ -19,7 +19,11 @@ html {
 
 body {
     max-width: 100vw;
-    overflow-x: hidden;we
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 96px 0;
 }
 
 .row {
@@ -32,10 +36,6 @@ body {
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
-}
-
-.container {
-    padding: 96px 0;
 }
 
 .blue {
