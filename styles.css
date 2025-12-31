@@ -120,12 +120,6 @@ nav {
     justify-content: space-between;
 }
 
-.row {
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
 .nav__logo {
     display: flex;
     align-items: center;
@@ -381,6 +375,11 @@ QUALITY
 .quality__description {
     max-width: 576px;
     margin-right: 64px;
+}
+
+#quality .section__title,
+#values .section__title {
+    line-height: 1.5;
 }
 
 .section__tag {
@@ -644,4 +643,8 @@ VALUES
 .value:nth-child(2),
 .value__img--wrapper {
     background-color: #feb2b2;
+}
+
+#value .btn {
+    margin-top: 48px;
 }
