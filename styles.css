@@ -592,7 +592,7 @@ VALUES
     margin-right: 2rem;
     align-items: flex-start;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .value__title {
@@ -600,8 +600,7 @@ VALUES
     align-items: center;
 }
 
-.value:nth-child(1),
-.value__img--wrapper {
+.value:nth-child(1) .value__img--wrapper {
     background-color: #9ae6b4;
 }
 
@@ -640,8 +639,7 @@ VALUES
     margin-top: 32px;
 }
 
-.value:nth-child(2),
-.value__img--wrapper {
+.value:nth-child(2) .value__img--wrapper {
     background-color: #feb2b2;
 }
 
