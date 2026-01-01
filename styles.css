@@ -100,7 +100,7 @@ p {
     cursor: pointer;
 }
 
-section:nth-child(odd) {
+section:nth-child(even) {
     background-color: #c7deff
 }
 
@@ -592,7 +592,7 @@ VALUES
     margin-right: 2rem;
     align-items: flex-start;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .value__title {
@@ -643,6 +643,6 @@ VALUES
     background-color: #feb2b2;
 }
 
-#value .btn {
+#values .btn {
     margin-top: 48px;
 }
