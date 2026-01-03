@@ -585,6 +585,11 @@ VALUES
     align-items: center;
 }
 
+.value__top {
+    display: flex;
+    align-items: center;
+}
+
 .values__description,
 .values__img {
     width: 50%;
@@ -601,12 +606,10 @@ VALUES
     font-weight: 900;
     color: #0e1a2b;
     line-height: 1.2;
-}
-    -webkit-text-fill-color: transparent;
     color: transparent;
 }
 
-.values__lists {
+.values__list {
     margin-left: 0;
     margin-right: 0;
     display: flex;
@@ -628,7 +631,8 @@ VALUES
 
 .value__title {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
 }
 
 .value__title:nth-of-type(1) .value__img--wrapper {
@@ -667,7 +671,6 @@ VALUES
 
 .value__para {
     margin-top: 16px;
-    margin-left: 16px;
     line-height: 1.6;
     color: #5a6a7a;
 }
@@ -676,7 +679,7 @@ VALUES
     margin-top: 32px;
 }
 
-.value__title:nth-of-type(2) .value__img--wrapper {
+.value__title:nth-last-child(2) .value__img--wrapper {
     background-color: #feb2b2;
 }
 
@@ -995,6 +998,10 @@ TESTIMONIALS
     transition: all 300ms ease;
 }
 
+.testimonial__button:hover {
+    background-color: rgb(229, 231, 235);
+}
+
 .testimonial__button svg {
     width: 16px;
     height: 16px;
@@ -1088,6 +1095,10 @@ START
     transition: all 300ms ease;
 }
 
+.start__button:hover:nth-child(1) {
+    background-color: rgba(229, 62, 62, 1);
+}
+
 .start__button {
     padding: 20px 40px;
     border-radius: 500px;
@@ -1162,7 +1173,7 @@ footer {
     line-height: 1.5;
 }
 
-.footer__column__link:nth-last-child(2) {
+.footer__column--link:nth-child(2) {
     margin-top: 24px;
 }
 
@@ -1174,6 +1185,22 @@ footer {
     font-weight: 500;
     position: relative;
     cursor: pointer;
+}
+
+.footer__column--link:hover::after {
+    opacity: 1;
+}
+
+.footer__column--link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+    background: #f7fafc;
+    transition: all 300ms ease;
+    opacity: 0;
 }
 
 .footer__divider {
@@ -1228,6 +1255,10 @@ footer {
     z-index: 2;
     cursor: pointer;
     transition: all 300ms ease;
+}
+
+.footer__social--link:hover {
+    background-color: rgba(203, 213, 224, 1);
 }
 
 .footer__social--link svg {
