@@ -284,6 +284,12 @@ nav {
     border: none;
 }
 
+.menu--open .menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+
 /* 
 
 LANDING
