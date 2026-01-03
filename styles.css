@@ -279,7 +279,7 @@ nav {
 .menu__link--primary {
     color: #f7fafc;
     padding: 12px 32px;
-    color: #6415ff;
+    background: #6415ff;
     border-radius: 500px;
     border: none;
 }
@@ -1422,5 +1422,6 @@ footer {
         width: auto;
         max-width: 384px;
     }
+
 
 }
