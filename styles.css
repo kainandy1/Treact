@@ -606,7 +606,6 @@ VALUES
     font-weight: 900;
     color: #0e1a2b;
     line-height: 1.2;
-    color: transparent;
 }
 
 .values__list {
@@ -635,9 +634,9 @@ VALUES
     align-items: start;
 }
 
-.value__title:nth-of-type(1) .value__img--wrapper {
-    background-color: #9ae6b4;
-}
+.value__title:nth-child(1) .value__img--wrapper {
+    background-color: #9ae6b4; 
+} 
 
 .value:nth-child(1) {
     margin-top: 32px;
@@ -675,12 +674,12 @@ VALUES
     color: #5a6a7a;
 }
 
-.value:nth-child(2) {
-    margin-top: 32px;
+.value__title:nth-child(2) .value__img--wrapper {
+    background-color: #feb2b2;
 }
 
-.value__title:nth-last-child(2) .value__img--wrapper {
-    background-color: #feb2b2;
+.value:nth-child(2) {
+    margin-top: 32px;
 }
 
 .value__img {
@@ -1265,3 +1264,4 @@ footer {
     height: 16px;
     width: 16px;
 }
+
