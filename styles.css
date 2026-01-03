@@ -674,7 +674,7 @@ VALUES
     color: #5a6a7a;
 }
 
-.value__title:nth-child(2) .value__img--wrapper {
+.value:nth-child(2) .value__title .value__img--wrapper {
     background-color: #feb2b2;
 }
 
@@ -1264,4 +1264,6 @@ footer {
     height: 16px;
     width: 16px;
 }
+
+/* Small phones, tablets, large smartphones */
 
